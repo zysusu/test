@@ -1,0 +1,77 @@
+body,*{
+	margin:0;
+	padding:0;
+}
+body{
+	background:url(../img/bg5.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+.mainbody{
+	background:rgba(0,0,0,0.3);
+}
+.Atop{
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	font-style: italic;
+	text-shadow: 4px 2px 2px #bbb;
+	/*background-color: orange;*/
+}
+.Atop h1{
+	color:#f56e2f;
+}
+.information{
+	width:100%;
+	height:400px;
+	/*background:rgba(0,0,0,0.3);*/
+/*	border:1px solid black;*/
+}
+.information1,.information2{
+	margin: 50px 0px;
+	width:35%;
+	height: 300px;
+	float:left;
+}
+.pic{
+	width:22%;
+	height:400px;
+	float:left;
+}
+.pic img{
+	width:100%;
+	margin-top: 60px;
+	border-radius: 50%;
+	border:2px solid #879dfe;
+	/*transform:rotate(20deg);
+	-moz-transform:rotate(20deg);
+	-webkit-transform:rotate(20deg);
+	-o-transform:rotate(20deg);
+	transition:1s;*/
+}
+.right,.right span{
+	float:right;
+}
+.xinxi tr{
+	height:40px;
+}
+.xinxi tr td span{
+	padding:5px 10px;
+	border-radius: 6px;
+	cursor:pointer;
+	/*border:1px solid #fff;*/
+}
+.xinxi span:hover{
+	border:2px solid #fff;
+}
+
+.introduce{
+/*	text-align: center;*/
+	height:220px;
+	font-family: "华文新魏";
+	font-style: italic;
+	font-size: 22px;
+	color:#fff;
+	padding:10px 20%;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>个人简介</title>
+<link rel="stylesheet" type="text/css" href="css/about_style.css">
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script src="js/jquery.1.9.1.min.js" type="text/javascript"></script>
+<script src="js/jquery.quoterotator.min.js" type="text/javascript"></script>
+<style type="text/css">
+.active{
+	border:3px solid #fff;
+}
+</style>
+</head>
+
+<body>
+<audio src="css/Moonglow.mp3" autoplay="autoplay"></audio>
+<div class="mainbody">
+<header class="Atop">
+	<h1>About me</h1>
+</header>
+<section class="information">
+<div class="information1">
+	<table class="xinxi right">
+		<tr><td><span class="tx1" style="background-color: #b5e6d9;">姓名：小小苏</span></td></tr>
+		<tr><td><span class="tx2" style="background-color: pink; margin-right: 15px;">星座：射手座</span></td></tr>
+		<tr><td><span class="tx1" style="background-color: #b5e6d9; margin-right: 30px;">故乡：四川南充</span></td></tr>
+		<tr><td><span class="tx2" style="background-color: pink; margin-right: 45px;">职业：学生</span></td></tr>
+		<tr><td><span class="tx1" style="background-color: #b5e6d9; margin-right: 30px;">偶像：李建</span></td></tr>
+		<tr><td><span class="tx2" style="background-color: pink; margin-right: 15px;">爱好：听歌，旅行，自由...</span></td></tr>
+		<tr><td><span class="tx1" style="background-color: #b5e6d9; ">音乐：纯音乐 and so on</span></td></tr>
+	</table>
+</div>
+<div class="pic"><img id="pic" src="img/me1.jpg"></div>
+<div class="information2">
+	<table class="xinxi">
+		<tr><td><span class="tx2" style="background-color: pink;">年龄：20</span></td></tr>
+		<tr><td><span class="tx1" style="background-color: #b5e6d9; margin-left: 15px;">出生年月：1996年12月</span></td></tr>
+		<tr><td><span class="tx2" style="background-color: pink; margin-left: 30px;">所在地：四川成都</span></td></tr>
+		<tr><td><span class="tx1" style="background-color: #b5e6d9; margin-left: 45px;">学校：成信大</span></td></tr>
+		<tr><td><span class="tx2" style="background-color: pink; margin-left: 30px;">运动：慢跑，骑行，乒乓球...</span></td></tr>
+		<tr><td><span class="tx1" style="background-color: #b5e6d9; margin-left: 15px;">QQ：137919839*</span></td></tr>
+		<tr><td><span class="tx2" style="background-color: pink;">书籍：《人生若只如初见》</span></td></tr>
+	</table>
+</div>	
+</section> 
+<section class="introduce">
+	<p id="test">&nbsp;&nbsp;&nbsp;&nbsp;我始终相信，相遇即是缘分。佛说，前世五百次的回眸换来今生的一次擦肩而过。人的一生，不过是一场充满未知的旅行，一路播种，一路成长，一路收获。越努力，越幸运，生活不会抛弃你，除非你先放弃了生活。人生也是因为其未知与有限而变得美好，我们总是在寻找，在等待着什么。一次相遇，一场邂逅，一段故事。愿你我的人生都能如阳光般美好灿烂，活出自己想要的模样。</p>
+</section>
+
+</div>
+</body>
+<script type="text/javascript">
+	var i = 0;
+	$("#pic").css('transform','rotate('+i+'deg)');
+	var tran = setInterval(function(){
+		i +=1;
+		$("#pic").css('transform','rotate('+i+'deg)');
+		/*if(i%5==0){
+			$(".tx1").addClass("active");
+			$(".tx2").removeClass("active");
+		}else if(i%11==0){
+			$(".tx1").removeClass("active");
+			$(".tx2").addClass("active");
+		}*/      //标签闪烁
+	},80);
+
+	 /*var n=2;
+	 if(n%2==0){
+	 	alert(1);
+	 }
+	 alert(2);*/
+	 // setInterval(function(){
+	 // 	if(n%2==0)
+	 // 	{
+	 // 		$(".tx1").addClass("active");
+	 // 	}else{
+	 // 		$(".tx1").removeClass("active");
+	 // 	}
+	 // 	n++；
+	 // },1000)
+
+
+
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		function textFlash(obj,cssName,times){
+			var i=0,t=false,o=obj.attr("class")+" ",c="",times=times||2;
+			if(t) return;
+			t=setInterval(function(){            //实现闪烁效果
+				i++;
+				c=i%2?o+cssName:o;
+				obj.attr("class",c);
+				if(i==2*times){
+					clearInterval(t);
+					obj.removeClass(cssName);
+				}
+			},200);
+		};
+		$(function(){
+			textFlash($("#tx1"),"red",3);	
+		});
+	})
+	jQuery(document).ready(function($){
+			$("#test").quoterotator();
+		});
+</script>
+</html>

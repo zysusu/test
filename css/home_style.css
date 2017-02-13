@@ -1,0 +1,111 @@
+body,*{
+	margin:0;
+	padding:0;
+}
+hr{
+	color:#fff;
+	height: 3px;
+	background-color: #fff;
+	width:0%;
+}
+
+.wrap{
+	background:url(../img/bg2.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+header{
+	height: 50px;
+	width:100%;
+	font-weight: bold;
+/*	position: fixed;  /*如果想要其移动就把这行去掉*/
+	/*background-color: #febe4a;*/
+}
+.navul{
+	margin-right: 20px;
+}
+.navul li{
+	line-height: 50px;
+	list-style: none;
+}
+.navul li a{
+	display: block;
+	float:right;
+	padding:0 15px;
+	color:white;
+	text-decoration: none;
+}
+.navul li a:hover{
+	background-color: rgba(0,0,0,0.3);
+/*	background-color: orange;*/
+}
+.content{
+	width:100%;
+	height:550px;
+	overflow:hidden;
+	/*background:rgba(225,225,225,0.2);*/
+}
+.home{
+	width:26%;
+	height: 180px;
+	margin: 0 auto;
+	margin-top: 150px;
+	padding:20px 0;
+	text-align: center;
+}
+.home h1{
+	margin:10px 0;
+}
+.me{
+	width:100px;
+	height:40px;
+	margin:20px auto;
+	background-color: #febe4a;
+	border:0px;
+	cursor:pointer;
+	border-radius: 5px;
+}
+.me a{
+	color:#fff;
+	text-decoration: none;
+}
+.info{
+	height:400px;
+	width: 100%;
+	background-color: #fec8f3;
+}
+.info2{
+	background: #f2f896;
+}
+.info3{
+	background: #ade7e5;
+}
+.info img{
+	display: inline;
+	float:left;
+	width:45%;
+	height: inherit;
+}
+.essay{
+	text-align: center;
+	padding: 100px 20px;
+}
+.essay h2{
+	margin: 10px 0px;
+}
+.essay h3{
+	margin-bottom: 10px;
+}
+.essay p{
+ 	line-height: 25px;
+ }
+footer{
+	width:100%;
+	height:100px;
+	background-color: #5b5b80;
+	text-align: center;
+	line-height: 100px;
+	color:#c9cccc;
+}
