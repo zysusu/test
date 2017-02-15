@@ -16,6 +16,23 @@
 	}
 }
 </style>
+<script type="text/javascript">
+	function hrauto(){
+		wid = 0;
+		var hr2 = document.getElementById("hr2");
+		var hr1 = document.getElementById("hr1");
+		hr2.style.float="right";
+		var setInter = setInterval(function(){
+			wid +=5;
+			hr1.style.width = wid+'%';
+			hr2.style.width = wid+'%';
+			if(wid == 100){
+			clearInterval(setInter);
+		}
+		},60);
+	}
+	window.onload = hrauto;
+</script>
 </head>
 
 <body>
@@ -80,21 +97,4 @@
 	&copy;BY&nbsp;&nbsp;zysusu &nbsp;&nbsp;&nbsp;&nbsp;2017-1-22
 </footer>
 </body>
-<script type="text/javascript">
-	function hrauto(){
-		wid = 0;
-		var hr2 = document.getElementById("hr2");
-		var hr1 = document.getElementById("hr1");
-		hr2.style.float="right";
-		var setInter = setInterval(function(){
-			wid +=5;
-			hr1.style.width = wid+'%';
-			hr2.style.width = wid+'%';
-			if(wid == 100){
-			clearInterval(setInter);
-		}
-		},60);
-	}
-	window.onload = hrauto;
-</script>
 </html>
