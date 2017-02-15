@@ -17,33 +17,38 @@ hr{
 	background-position: center center;
 }
 header{
-	height: 50px;
+	height: auto;
 	width:100%;
 	font-weight: bold;
 /*	position: fixed;  /*如果想要其移动就把这行去掉*/
 	/*background-color: #febe4a;*/
 }
 .space{
-	float:left;
-	display: inline;
-	line-height: 50px; 
-	color:white; 
+	/*display: inline;*/
+	line-height: 50px;
+	width:100%;
+	text-align: center;
+	color:#a435e7; 
+	color:white;
 	font-weight: bold; 
 	letter-spacing: 2px; 
-	margin-left: 15px;
+	/*margin-left: 15px;*/
 }
 .navul{
 	margin-right: 20px;
 }
 .navul li{
+	background-color: rgba(0,0,0,0.3);
 	line-height: 50px;
 	list-style: none;
 }
 .navul li a{
+	width:25%;
+	text-align: center;
+	float:left;
 	display: block;
-	float:right;
-	padding:0 15px;
-	color:white;
+	/*padding:0 15px;*/
+	color:orange;
 	text-decoration: none;
 }
 .navul li a:hover{
@@ -52,15 +57,15 @@ header{
 }
 .content{
 	width:100%;
-	height:550px;
+	height:240px;
 	overflow:hidden;
+	margin-top: 100px;
 	/*background:rgba(225,225,225,0.2);*/
 }
 .home{
-	width:26%;
+	width:75%;
 	height: 180px;
 	margin: 0 auto;
-	margin-top: 150px;
 	padding:20px 0;
 	text-align: center;
 }
@@ -81,7 +86,7 @@ header{
 	text-decoration: none;
 }
 .info{
-	height:400px;
+	height:auto;
 	width: 100%;
 	background-color: #fec8f3;
 }
@@ -92,13 +97,13 @@ header{
 	background: #ade7e5;
 }
 .info img{
-	display: inline;
+	display: block;
 	float:left;
-	width:45%;
-	height: inherit;
-}
-.info2 img{
-	float:right;
+	width:80%;
+	padding-left: 10%;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	/*height: inherit;*/
 }
 .essay{
 	text-align: center;

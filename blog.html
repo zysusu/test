@@ -2,18 +2,30 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width: initial-scale=1.0">
 <title>小小苏的博客</title>
-<link rel="stylesheet" type="text/css" href="css/home_style.css">
+<link rel="stylesheet" type="text/css" media="only screen and (min-width:480px),only (min-device-width:480px)" href="css/home_style.css">
+<link rel="stylesheet" type="text/css" media="only screen and (max-width:490px), only (max-device-width:480px)" href="css/home_style01.css">
+<style type="text/css">
+@media screen and (max-width:480px){
+	html,body{
+		height: 100%;
+	}
+	.first{
+		height:540px;
+	}
+}
+</style>
 </head>
 
 <body>
 <audio src="css/Moonglow.mp3" autoplay="autoplay"></audio>
 
 <div class="wrap">
+<div class="first">
 <header>
-	<span style="float:left; display: inline; line-height: 50px; color:white; font-weight: bold; letter-spacing: 2px; margin-left: 15px;">小小苏的空间</span>
+	<div class="space">小小苏的空间</div>
 	<ul class="navul">
-
 		<li><a href="new.html">联系我</a></li>
 		<li><a href="new.html">随笔</a></li>
 		<li><a href="new.html">前端笔记</a></li>
@@ -31,7 +43,7 @@
 			<hr id="hr2">
 		</div>
 	</div>
-
+</div><!-- first -->
 	<section>
 		<div class="info">
 			<img src="img/img2.jpg" />
@@ -43,7 +55,7 @@
 			</article>
 		</div>
 		<div class="info info2">
-			<img style="float:right;" src="img/img1.jpg" />
+			<img src="img/img1.jpg" />
 			<article class="essay">
 				<h2>第二阶段</h2>
 				<h3>衣带渐宽终不悔，为伊消得人憔悴</h3>
