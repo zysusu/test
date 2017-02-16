@@ -75,3 +75,23 @@ body{
 	color:#fff;
 	padding:10px 20%;
 }
+@media screen and (max-width: 480px){
+	body{
+		border:2px solid orange;
+	}
+	html,body{
+		height:100%;
+	}
+	.information{
+		height:100%;
+	}
+	/*.mainbody{
+		height:100%;
+	}*/
+	.information1,.information2{
+		height:50%;
+}
+	.pic{
+		height:55%;
+}
+}
