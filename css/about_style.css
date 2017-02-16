@@ -8,38 +8,6 @@ body{
 	background-position: center center;
 	background-size: cover;
 }
-@media screen and (min-width:480px){
-.information{
-	height:400px;
-}
-.information1,.information2{
-	height:300px;
-}
-.pic{
-	height:400px;
-}
-}
-
-@media screen and (max-width: 480px){
-	body{
-		border:2px solid orange;
-	}
-	html,body{
-		height:100%;
-	}
-	.information{
-		height:60%;
-	}
-	/*.mainbody{
-		height:100%;
-	}*/
-	.information1,.information2{
-		height:90%;
-}
-	.pic{
-		height:100%;
-}
-}
 .mainbody{
 	background:rgba(0,0,0,0.3);
 }
@@ -56,19 +24,19 @@ body{
 }
 .information{
 	width:100%;
-	/*height:400px;*/
+	height:400px;
 	/*background:rgba(0,0,0,0.3);*/
 /*	border:1px solid black;*/
 }
 .information1,.information2{
 	margin: 50px 0px;
 	width:35%;
-	/*height: 300px;*/
+	height: 300px;
 	float:left;
 }
 .pic{
 	width:22%;
-	/*height:400px;*/
+	height:400px;
 	float:left;
 }
 .pic img{
