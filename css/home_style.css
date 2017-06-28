@@ -16,6 +16,9 @@ hr{
 	background-size: cover;
 	background-position: center center;
 }
+.first{
+	min-height:640px;
+}
 header{
 	height: 50px;
 	width:100%;

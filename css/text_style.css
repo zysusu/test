@@ -1,0 +1,108 @@
+a{
+	text-decoration: none;
+	color:black;
+}
+body{
+	 background: #f6f6f6;
+	/*font-size: 16px;
+	font-size: 1.6rem;*/
+/*	line-height: 1.3em;*/
+	-webkit-transition: all .25s linear;
+	transition: all .25s linear;
+	font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+header{
+	width: 100%;
+	height:60px;
+}
+.logo{
+	margin-top: 40px;
+	margin-left: 8%;
+	position: fixed;
+	width: 20%;
+	float:left;
+}
+
+.navul{
+	margin-right: 20px;
+}
+.navul li{
+	line-height: 50px;
+	list-style: none;
+}
+.navul li a{
+	display: block;
+	float:right;
+	padding:0 15px;
+	font-size: 20px;
+	font-weight: bold;
+	color:#feb508;
+	transition:.5s all;
+}
+.navul li a:hover{
+	/*text-decoration: underline;*/
+	transform: rotate(-5deg);
+	transform: scale(1.2);
+}
+.main{
+	width:86%;
+	margin: 20px auto;
+	margin-top: 70px;
+	position: relative;
+}
+.right{
+	width:100%;
+	border-bottom:1px solid #b1b1b1;
+	margin-bottom:30px;
+	overflow: hidden;
+}
+.right:last-child{
+	border-bottom:none;
+}
+section h1{
+	padding:2px;
+	transition: .5s;
+	margin: 0;
+	padding:0;
+	text-transform: uppercase;
+	font-size:30px;
+}
+article{
+	margin:22px 0;
+	line-height: 25px;
+	overflow: hidden;
+	text-align: justify; /* 每一行撑满对齐*/
+	/*text-overflow: ellipsis;
+	white-space: nowrap;*/
+}
+
+.name{
+	color:#838383;
+}
+
+.leftNav{
+	float:left;
+	width:22%;
+	min-height:400px;
+	height:auto;
+	border-right:1px solid gray; 
+	display: block;
+	position: fixed;
+}
+.leftNav ul{
+	list-style: none;
+}
+.leftNav ul li{
+	line-height:35px;
+	margin-bottom: 15px;
+	font-size: 18px;
+	padding-left:25px; 
+	font-family: 'Comic Sans MS', cursive, sans-serif;
+	background:url(../img/tag-ico.png) no-repeat left;
+}
+.content{
+	float:left;
+	width: 56%;
+	position: relative;
+	margin-left: 30%;
+}

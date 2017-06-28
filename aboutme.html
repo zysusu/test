@@ -11,23 +11,39 @@
 .active{
 	border:3px solid #fff;
 }
+.fre{
+	font-weight: bold;
+	float: left !important;
+}
+.fre2{
+	font-weight: bold;
+}
 </style>
 </head>
 
 <body>
 <audio src="css/Moonglow.mp3" autoplay="autoplay"></audio>
 <div class="mainbody">
-<header class="Atop">
-	<h1>About me</h1>
+<header>
+	<div class="t_nav">
+		<ul class="top_nav">
+			<li><a href="new.html">前端笔记</a></li>
+			<li><a href="new.html">我的博文</a></li>
+			<li><a href="blog.html">博客首页</a></li>
+		</ul>
+	</div>
+	<div class="Atop"><h1 class="">About me</h1></div>
 </header>
 <section class="information">
+<div class="text">人生并非虚耗<br>，何来尘埃飞扬<br>。</div>
+<div class="text">每一个不曾起舞的日子<br>，都是对生命的辜负<br>。</div>
 <div class="information1">
 	<table class="xinxi right">
-		<tr><td><span class="tx1" style="background-color: #b5e6d9;">姓名：小小苏</span></td></tr>
+		<tr><td><span class="tx1" style="background-color: #b5e6d9;"><span class="fre">姓名：</span>小小苏</span></td></tr>
 		<tr><td><span class="tx2" style="background-color: pink; margin-right: 15px;">星座：射手座</span></td></tr>
 		<tr><td><span class="tx1" style="background-color: #b5e6d9; margin-right: 30px;">故乡：四川南充</span></td></tr>
 		<tr><td><span class="tx2" style="background-color: pink; margin-right: 45px;">职业：学生</span></td></tr>
-		<tr><td><span class="tx1" style="background-color: #b5e6d9; margin-right: 30px;">偶像：李建</span></td></tr>
+		<tr><td><span class="tx1" style="background-color: #b5e6d9; margin-right: 30px;"><span class="fre">Tel：</span>18381061227</span></td></tr>
 		<tr><td><span class="tx2" style="background-color: pink; margin-right: 15px;">爱好：听歌，旅行，自由...</span></td></tr>
 		<tr><td><span class="tx1" style="background-color: #b5e6d9; ">音乐：纯音乐 and so on</span></td></tr>
 	</table>
@@ -37,16 +53,16 @@
 	<table class="xinxi">
 		<tr><td><span class="tx2" style="background-color: pink;">年龄：20</span></td></tr>
 		<tr><td><span class="tx1" style="background-color: #b5e6d9; margin-left: 15px;">出生年月：1996年12月</span></td></tr>
-		<tr><td><span class="tx2" style="background-color: pink; margin-left: 30px;">所在地：四川成都</span></td></tr>
+		<tr><td><span class="tx2" style="background-color: pink; margin-left: 30px;"><span class="fre2">所在地：</span>四川成都</span></td></tr>
 		<tr><td><span class="tx1" style="background-color: #b5e6d9; margin-left: 45px;">学校：成信大</span></td></tr>
 		<tr><td><span class="tx2" style="background-color: pink; margin-left: 30px;">运动：慢跑，骑行，乒乓球...</span></td></tr>
-		<tr><td><span class="tx1" style="background-color: #b5e6d9; margin-left: 15px;">QQ：137919839*</span></td></tr>
+		<tr><td><span class="tx1" style="background-color: #b5e6d9; margin-left: 15px;"><span class="fre2">邮箱：</span>1379198393@qq.com</span></td></tr>
 		<tr><td><span class="tx2" style="background-color: pink;">书籍：《人生若只如初见》</span></td></tr>
 	</table>
 </div>	
 </section> 
 <section class="introduce">
-	<p id="test">&nbsp;&nbsp;&nbsp;&nbsp;我始终相信，相遇即是缘分。佛说，前世五百次的回眸换来今生的一次擦肩而过。人的一生，不过是一场充满未知的旅行，一路播种，一路成长，一路收获。越努力，越幸运，生活不会抛弃你，除非你先放弃了生活。人生也是因为其未知与有限而变得美好，我们总是在寻找，在等待着什么。一次相遇，一场邂逅，一段故事。愿你我的人生都能如阳光般美好灿烂，活出自己想要的模样。</p>
+	<p id="test">我始终相信，相遇即是缘分。<br>佛说，前世五百次的回眸换来今生的一次擦肩而过。<br>人的一生，不过是一场充满未知的旅行，一路播种，一路成长，一路收获。越努力，越幸运，生活不会抛弃你，除非你先放弃了生活。<br>人生也是因为其未知与有限而变得美好，我们总是在寻找，在等待着什么。<br>一次相遇，一场邂逅，一段故事。<br>愿你我的人生都能如阳光般美好灿烂，活出自己想要的模样。</p>
 </section>
 
 </div>
@@ -55,7 +71,7 @@
 	var i = 0;
 	$("#pic").css('transform','rotate('+i+'deg)');
 	var tran = setInterval(function(){
-		i +=1;
+		i +=0.3;
 		$("#pic").css('transform','rotate('+i+'deg)');
 		/*if(i%5==0){
 			$(".tx1").addClass("active");
@@ -64,7 +80,7 @@
 			$(".tx1").removeClass("active");
 			$(".tx2").addClass("active");
 		}*/      //标签闪烁
-	},80);
+	},20);
 
 	 /*var n=2;
 	 if(n%2==0){

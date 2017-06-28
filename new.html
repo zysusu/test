@@ -2,25 +2,175 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title></title>
+<title>前端笔记</title>
 <!-- <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>-->
 <style type="text/css">
 a{
 	text-decoration: none;
 	color:black;
 }
-p{
-	color:orange;
+body{
+	 background: #f6f6f6;
+	-webkit-transition: all .25s linear;
+	transition: all .25s linear;
+	font-family: 'Comic Sans MS', cursive, sans-serif;
 }
+header{
+	width: 100%;
+	height:60px;
+}
+.logo{
+	margin-top: 40px;
+	margin-left: 8%;
+	position: fixed;
+	width: 20%;
+	float:left;
+}
+
+.navul{
+	margin-right: 20px;
+}
+.navul li{
+	line-height: 50px;
+	list-style: none;
+}
+.navul li a{
+	display: block;
+	float:right;
+	padding:0 15px;
+	font-size: 20px;
+	font-weight: bold;
+	color:#feb508;
+	transition:.5s all;
+}
+.navul li a:hover{
+	/*text-decoration: underline;*/
+	transform: rotate(-5deg);
+	transform: scale(1.2);
+}
+.main{
+	width:86%;
+	margin: 20px auto;
+	margin-top: 70px;
+	position: relative;
+}
+.right{
+	width:100%;
+	height:256px;
+	border-bottom:1px solid #b1b1b1;
+	margin-bottom:30px;
+	overflow: hidden;
+}
+.right:last-child{
+	border-bottom:none;
+}
+h1 a:hover{
+	background-color: #ffdf1f;
+	/*transition: 2s;*/
+}
+section h1 a{
+	padding:2px;
+	transition: .5s;
+	cursor:pointer;
+	margin:0;
+	padding:0;
+	width:auto !important;
+	text-transform: uppercase;
+	font-size:30px;
+}
+article{
+	margin:22px 0;
+	height: 100px;
+	line-height: 25px;
+	overflow: hidden;
+	/*text-align: justify;*/ /* 每一行撑满对齐*/
+	/*text-overflow: ellipsis;
+	white-space: nowrap;*/
+}
+
+.name{
+	color:#838383;
+}
+@media screen and (min-width:600px){
+.leftNav{
+	float:left;
+	width:22%;
+	min-height:400px;
+	height:auto;
+	border-right:1px solid gray; 
+	display: block;
+	position: fixed;
+}
+.leftNav ul{
+	list-style: none;
+}
+.leftNav ul li{
+	line-height:35px;
+	margin-bottom: 15px;
+	font-size: 18px;
+	padding-left:25px; 
+	font-family: 'Comic Sans MS', cursive, sans-serif;
+	background:url(img/tag-ico.png) no-repeat left;
+}
+.content{
+	float:left;
+	width: 56%;
+	position: relative;
+	margin-left: 30%;
+}
+}/*@media screen adn (min-width:600px)*/
+
 </style>
 </head>
 
 <body>
-<h4>主人又偷懒啦，待主人更新后再来访问吧！</h4>
-<p><a href="http://hifor.net/2015/07/01/零基础免费搭建个人博客-hexo-github/" target="_blank">github与hexo起步:</a>http://hifor.net/2015/07/01/零基础免费搭建个人博客-hexo-github/</p>
-<p><a href="http://www.cnblogs.com/zhcncn/p/4097881.html" target="_blank">Hexo安装与配置：</a>http://www.cnblogs.com/zhcncn/p/4097881.html</p>
-<p><a href="http://www.cnblogs.com/Qhonhu/p/6137090.html">创建本地与github项目连接:</a>http://www.cnblogs.com/Qhonhu/p/6137090.html</p>
-<p><a href="http://www.moke8.com/article-5657-1.html" target="_blank">css3 Media Query实现响应式布局:</a>http://www.moke8.com/article-5657-1.html</p>
-<p><a href="http://blog.csdn.net/izzyliao/article/details/53074452" target="_blank"> Eclipse项目上传码云 </a>http://blog.csdn.net/izzyliao/article/details/53074452</p>
+<header style="width:100%;">
+  <div class="logo"><img src="img/logo.png"/></div>
+  	<ul class="navul">
+		<!-- <li><a href="new.html">联系我</a></li> -->
+		<li><a href="nodes.html">前端笔记</a></li>
+		<li><a href="aboutme.html">个人简介</a></li>
+		<li><a href="blog.html">首页</a></li>
+	</ul>
+</header>
+<div class="main">
+	<aside class="leftNav">
+		<ul>
+			<li><a href="#a_1">下载安装git和首次发布项目到GitHub</a></li>
+			<li><a href="#a_2">第一次项目经验总结</a></li>
+			<li><a href="#a_3">响应式布局</a></li>
+			<li><a href="#a_4">框架使用的利弊</a></li>
+		</ul>
+	</aside>
+
+	<div class="content">
+		<section class="right" id="a_1">
+			<h1><a href="text01.html">下载安装git和首次发布项目到GitHub&nbsp;»</a></h1>
+			<p class="name">2017-6-20</p>
+			<article>想必对于所有程序员来说，都希望能打造一个属于自己的网站。尤其是初级程序员们，都迫切的希望看到一些开发成果。奈何自己能力尚欠缺，各种相关的博客，资料也是“五花八门”。本文则分享了几个博主如何从只会写写简陋网页的小白，到创建自己的博客并发布到GitHub上的优秀博客，希望对你们在GitHub上搭建博客能有帮助。 </article>
+		</section>
+
+		<section class="right" id="a_2">
+			<h1><a href="text02.html">第一次项目经验总结&nbsp;»</a></h1>
+			<p class="name">2017-6-20</p>
+			<article>第一次项目还是踩了不少坑的。比如三级导航的伸缩与展开需求。当时便入了ul，li的坑，一直尝试用jquery来解决，却忘了可以再加一层span标签，绑定js事件。然后还有就是json多维数组传值的问题，主要是对获取数据循环的运用，以及ajax的data属性错误导致的问题，其次还有通过url传值跳转页面等问题。</article>
+		</section>
+
+		<section class="right" id="a_3">
+			<h1><a href="text03.html">响应式布局&nbsp;»</a></h1>
+			<p class="name">2017-6-26</p>
+			<article>IT行业始终是处于不断发展与不断的更新的状态，前端尤为明显，很多东西都是日新月异。尤其是现在互联网成为人们生活中必不可少的一部分，用户体验性也是非常重要的。所以对前端方面的要求也更高，本文则来说说响应式布局的那些事儿。响应式布局，不仅是能支持浏览器的各分辨率；最好的是能同时支持pc端和移动端。本文则讲解比较适用的html5和css3的响应式方式。</article>
+		</section>
+
+		<section class="right" id="a_4">
+			<h1><a href="text04.html">框架使用的利弊&nbsp;»</a></h1>
+			<p class="name">2017-6-28</p>
+			<article> 首先说明本文所指的框架并非各大技术框架，如vue.js，angular.js，react.js等技术技术框架，毕竟博主现在还只是进阶中的小菜鸟，尚不敢谈这些技术框架的利与弊。本文所谈只是在项目开发中，借鉴一些开源的前端框架模板，尤其是后台模板居多。</article>
+		</section>
+	</div>
+</div>
+<footer style="height:20px; font-size:12px; margin-top:30px; border-top:1px solid #d8d8d8; text-align:center; color:#a9a9a9; clear:both;">
+<p>Design by @zysusu</p>
+</footer>
 </body>
 </html>

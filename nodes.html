@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/node_style.css" type="text/css" />
+<script src="js/jquery-2.1.1.min.js"></script>
+<title></title>
+<style type="text/css">
+
+</style>
+
+</head>
+
+
+<body>
+<header style="width:100%;">
+  <div class="logo"><img src="img/logo.png"/></div>
+  	<ul class="navul">
+		<!-- <li><a href="new.html">联系我</a></li> -->
+		<li><a href="new.html">我的博文</a></li>
+		<li><a href="aboutme.html">个人简介</a></li>
+		<li><a href="blog.html">首页</a></li>
+	</ul>
+</header>
+<div class="wrap">
+	<section class="node">
+		<div class="l_node">
+			<article><p>字数超出显示省略号：{ white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}</p></article>
+		</div>
+		<div class="bord"><span class="circle"></span></div>
+		<div class="r_date">
+			<aside class="date">2017-6-20</aside>
+		</div>
+	</section>
+	<section class="node">
+		<div class="l_node">
+			<article><p><img src="img/img2.jpg"/>【心情札记】既要脚踏实地，亦要仰望天空
+	。</p></article>
+		</div>
+		<div class="bord"><span class="circle"></span></div>
+		<div class="r_date">
+			<aside class="date">2017-6-26</aside>
+		</div>
+	</section>
+	<section class="node">
+		<div class="l_node">
+			<article><p>阻止表单默认提交：（实用且重要）<br>e.preventDefault();</p></article>
+		</div>
+		<div class="bord"><span class="circle"></span></div>
+		<div class="r_date">
+			<aside class="date">2017-6-26</aside>
+		</div>
+	</section>
+	<section class="node">
+		<div class="l_node">
+			<article><p><img src="img/bg6.jpg"/>【心情札记】每一个不曾起舞的日子都是对生命的辜负。
+
+人生并非虚耗，何惧尘埃飞扬。</p></article>
+		</div>
+		<div class="bord"><span class="circle"></span></div>
+		<div class="r_date">
+			<aside class="date">2017-6-26</aside>
+		</div>
+	</section>
+</div>
+<footer style="height:20px; font-size:12px; margin-top:30px; border-top:1px solid #d8d8d8; text-align:center; color:#a9a9a9; clear:both;">
+<p>Design by @zysusu</p>
+</footer>
+</body>
+<script type="text/javascript">
+$(document).ready(function(){
+		$(document).on("mouseover",".l_node",function(){
+			$(this).next(".bord").find(".circle").css('background-color','#74b606');
+		});
+		$(document).on("mouseout",".l_node",function(){
+			$(this).next(".bord").find(".circle").css('background-color','#c3c3c3');
+		});
+		$(document).on("mouseover",".r_date",function(){
+			$(this).prev(".bord").find(".circle").css('background-color','#74b606');
+		});
+		$(document).on("mouseout",".r_date",function(){
+			$(this).prev(".bord").find(".circle").css('background-color','#c3c3c3');
+		});
+})/*$(document).ready*/
+</script>
+</html>

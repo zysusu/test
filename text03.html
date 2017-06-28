@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<!-- <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>-->
+<link rel="stylesheet" type="text/css" href="css/text_style.css">
+</head>
+
+<body>
+<header style="width:100%;">
+  <div class="logo"><img src="img/logo.png"/></div>
+  	<ul class="navul">
+		<!-- <li><a href="manage.html">个人中心</a></li> -->
+		<li><a href="nodes.html">前端笔记</a></li>
+		<li><a href="aboutme.html">个人简介</a></li>
+		<li><a href="blog.html">首页</a></li>
+	</ul>
+</header>
+<div class="main">
+	<aside class="leftNav">
+		<ul>
+			<li><a href="text01.html">下载安装git和首次发布项目到GitHub</a></li>
+			<li><a href="text02.html">第一次项目经验总结</a></li>
+			<li><a href="text03.html">响应式布局</a></li>
+			<li><a href="text04.html">框架使用的利弊</a></li>
+		</ul>
+	</aside>
+
+	<div class="content">
+		<section class="right">
+			<h1>响应式布局</h1>
+			<p class="name">2017-6-26</p>
+			<article><p>&nbsp;&nbsp;&nbsp;&nbsp; IT行业始终是处于不断发展与不断的更新的状态，前端尤为明显，很多东西都是日新月异。尤其是现在互联网成为人们生活中必不可少的一部分，用户体验性也是非常重要的。所以对前端方面的要求也更高，本文则来说说响应式布局的那些事儿。</p>
+
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;响应式布局，不仅是能支持浏览器的各分辨率；最好的是能同时支持pc端和移动端。本文则讲解比较适用的html5和css3的响应式方式。</p>
+
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;1.css3媒体查询</p>
+
+<p><code>@media screen and (max-width : 320px){
+
+.class{...}
+
+}
+<br>
+@media screen and (min-width: 800px) and (max-width: 1024px){
+
+.class{...}
+
+}</code>
+</p>
+   <p> &nbsp;&nbsp;&nbsp;&nbsp;2.媒体查询引入不同的css文件（更适用于同时兼容pc端和移动端）</p>
+
+<p><code><link rel="stylesheet" type="text/css" media="only screen and (min-width:480px),only (min-device-width:480px)" href="css/style.css"><br>
+<link rel="stylesheet" type="text/css" media="only screen and (max-width:480px), only (max-device-width:480px)" href="css/style01.css"></code></p>
+
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;3.适用bootstrap框架</p>
+
+<p>Bootstrap是目前较为流行的一套前端布局框架，也是主要以支持响应式布局为主。
+
+举例：<code><div class="col-md-6 col-sm-6  col-xs-12"></div></code>
+
+      <p>说明：最后的数字对应该div所占栅栏的列数。
+
+               col-md-6 代表在PC端上显示在一行的6个栅栏，也就是一半。
+
+              col-sm-6 代表在平板上也显示div占当前行的一半。
+
+              col-xs-12 代表在手机端显示为当前行的百分之百填充。
+
+    具体的使用方法请参考bootstrap官网。</p>
+
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;以上是我自己熟知并使用过的响应式布局方式，当然有时也可以通过js来实现。总的来说，想要成为一个优秀的前端工程师，熟练的掌握各种响应式布局方式也是必不可少的。</p></article>
+		</section>
+		
+	</div>
+</div>
+<footer style="height:20px; font-size:12px; margin-top:30px; border-top:1px solid #d8d8d8; text-align:center; color:#a9a9a9; clear:both;">
+<p>Design by @zysusu</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,123 @@
+a{
+	text-decoration: none;
+	color:black;
+}
+
+body{
+	/*font-size: 16px;
+	font-size: 1.6rem;*/
+/*	line-height: 1.3em;*/
+	color:#4c4f8b;
+	-webkit-transition: all .25s linear;
+	transition: all .25s linear;
+	font-family: "verdana","ms song","Arial","Helvetica", "sans-serif";
+	background:url(../img/bg8.jpg) repeat-x;
+	background-color: #faf7ef;
+}
+
+header{
+	width: 100%;
+	height:60px;
+}
+.logo{
+	margin-top: 40px;
+	margin-left: 8%;
+	position: fixed;
+	width: 20%;
+	float:left;
+}
+
+.navul{
+	margin-right: 20px;
+	/*font-family: 'Comic Sans MS', cursive, sans-serif;*/
+}
+.navul li{
+	line-height: 50px;
+	list-style: none;
+}
+.navul li a{
+	margin-top: 12px;
+	display: block;
+	float:right;
+	padding:0 15px;
+	font-size: 16px;
+	font-weight: bold;
+	color:#feb508;
+	color:#fff;
+	transition:.5s all;
+}
+.navul li a:hover{
+	/*text-decoration: underline;*/
+	transform: rotate(-5deg);
+	transform: scale(1.2);
+}
+.wrap{
+	width:70%;
+	margin: 20px auto;
+	margin-top: 50px;
+	/*border:1px solid #e1e1e1;*/
+	min-height: 500px;
+}
+.node{
+	width:98%;
+	min-height: 100px;
+	min-width: 860px;
+	margin: 10px auto;
+}
+.node .l_node{
+	min-height: 100px;
+	height:auto;
+	width:70%;
+	padding:10px 15px;
+	float:left;
+	border:1px solid #e1e1e1;
+	background-color: #f1f1f1;
+	background-color: #fff;
+	border-radius: 4px;
+}
+.node .l_node:hover{
+	background-color: #f1f1f1;
+}
+.node .l_node img{
+	float:left;
+	width:20%;
+	margin-right: 15px;
+}
+.node .bord{
+	width:2px;
+	min-height: 150px;
+	height:auto;
+	margin: 0 25px;
+	background-color:#c3c3c3;
+	float:left;
+}
+.node .bord .circle{
+	width:10px;
+	height:10px;
+	display: block;
+	border:2px solid #fff;
+	border-radius:50%;
+	background-color: #c3c3c3;
+	margin-top:20px;
+	margin-left: -6px;
+}
+.node .r_date{
+	min-height: 100px;
+	width:20%;
+	min-width: 120px;
+	float:right;
+}
+.node .r_date .date{
+	margin-top: 20px;
+	text-align: center;
+	width:120px;
+	height:30px;
+	line-height: 30px;
+	font-size: 14px;
+	background-color: #74b606;
+	border-radius: 0 40px;
+	color:#fff;
+}
+.node .r_date .date:hover{
+	text-shadow: 1px 1px 1px #e1e1e1;
+}
