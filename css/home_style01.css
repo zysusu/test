@@ -45,7 +45,7 @@ header{
 .navul li a{
 	width:25%;
 	text-align: center;
-	float:left;
+	float:right;
 	display: block;
 	/*padding:0 15px;*/
 	color:orange;
