@@ -9,7 +9,11 @@ body{
 /*	line-height: 1.3em;*/
 	-webkit-transition: all .25s linear;
 	transition: all .25s linear;
-	font-family: 'Comic Sans MS', cursive, sans-serif;
+	/*font-family: 'Comic Sans MS', cursive, sans-serif;*/
+}
+p{
+	font-size: 16px;
+	line-height: 2em;
 }
 header{
 	width: 100%;
@@ -34,7 +38,7 @@ header{
 	display: block;
 	float:right;
 	padding:0 15px;
-	font-size: 20px;
+	font-size: 16px;
 	font-weight: bold;
 	color:#feb508;
 	transition:.5s all;
@@ -65,7 +69,8 @@ section h1{
 	margin: 0;
 	padding:0;
 	text-transform: uppercase;
-	font-size:30px;
+	font-size:24px;
+	font-family: 'Comic Sans MS', cursive, sans-serif;
 }
 article{
 	margin:22px 0;
@@ -95,9 +100,9 @@ article{
 .leftNav ul li{
 	line-height:35px;
 	margin-bottom: 15px;
-	font-size: 18px;
+	font-size: 14px;
 	padding-left:25px; 
-	font-family: 'Comic Sans MS', cursive, sans-serif;
+	/*font-family: 'Comic Sans MS', cursive, sans-serif;*/
 	background:url(../img/tag-ico.png) no-repeat left;
 }
 .content{
@@ -105,4 +110,67 @@ article{
 	width: 56%;
 	position: relative;
 	margin-left: 30%;
+}
+.more{
+	display: none;
+}
+@media screen and (max-width:670px){
+	.logo{
+		position: static;
+		margin:0px;
+		float:none;
+		margin-top: 15px;
+   	    margin-left: 10px;
+	}
+	.navul{
+		margin-right: 0px;
+		width:100%;
+		padding-left: 0px;
+	}
+	.navul li a{
+		padding:0px;
+		padding-right: 20px;
+		font-size: 16px;
+	}
+	.main{
+		width:100%;
+		margin-top: 10px;
+	}
+	/*.leftNav{
+		display: none;
+	}*/
+	.content{
+		width: 100%;
+		margin-left: 0px;
+	}
+	.more{
+		margin: 10px;
+		display: block;
+	}
+	.more .iconfont{
+		font-size: 22px;
+	}
+	.leftNav{
+		display: none;
+		width: calc(100% - 16px);
+		position: static;
+		float: left;
+		padding-left: 0px;
+		background-color: #fff;
+		border-right: none;
+		margin: 0 8px;
+    	min-height: 25px;
+    /*border-bottom: 2px solid #333;*/
+    /*margin-bottom: 20px;*/
+	}
+	.leftNav ul{
+		padding: 0 10px;
+		margin-left: 0px;
+	}
+	.leftNav ul li{
+		border-bottom: 1px solid #f3f3f3;
+	}
+	section h1{
+		font-size: 20px;
+	}
 }
