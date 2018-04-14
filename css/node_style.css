@@ -2,6 +2,10 @@ a{
 	text-decoration: none;
 	color:black;
 }
+*{
+	margin:0px;
+	padding:0px;
+}
 body{
 	/*font-size: 16px;
 	font-size: 1.6rem;*/
@@ -17,6 +21,7 @@ body{
 header{
 	width: 100%;
 	height:60px;
+	margin-top: 10px;
 }
 .logo{
 	margin-top: 40px;
@@ -25,7 +30,9 @@ header{
 	width: 20%;
 	float:left;
 }
-
+.logo img{
+		max-width: 100%;
+}
 .navul{
 	margin-right: 20px;
 	/*font-family: 'Comic Sans MS', cursive, sans-serif;*/
@@ -56,12 +63,25 @@ header{
 	margin-top: 50px;
 	/*border:1px solid #e1e1e1;*/
 	min-height: 500px;
+	position: relative;
+	padding: 0px;
+}
+.right-border{
+	width: 2px;
+	background-color: #c3c3c3;
+	height: 100%;
+	position: absolute;
+	top:0px;
+	left: calc(70% + 57px);
+    z-index: -1;
 }
 .node{
-	width:98%;
+	width:100%;
 	min-height: 100px;
-	min-width: 860px;
+	/*min-width: 860px;*/
 	margin: 10px auto;
+	display: inline-block;
+	/*或者float:left;*/
 }
 .node .l_node{
 	min-height: 100px;
@@ -84,11 +104,12 @@ header{
 }
 .node .bord{
 	width:2px;
-	min-height: 150px;
-	height:auto;
+	/*min-height: 150px;*/
+	/*height:auto;*/
 	margin: 0 25px;
 	background-color:#c3c3c3;
 	float:left;
+	height: 0px;
 }
 .node .bord .circle{
 	width:10px;
@@ -103,7 +124,7 @@ header{
 .node .r_date{
 	min-height: 100px;
 	width:20%;
-	min-width: 120px;
+	/*min-width: 120px;*/
 	float:right;
 }
 .node .r_date .date{
@@ -119,4 +140,32 @@ header{
 }
 .node .r_date .date:hover{
 	text-shadow: 1px 1px 1px #e1e1e1;
+}
+@media screen and (max-width: 968px)
+{
+	.wrap{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 669px)
+{
+	.node .bord, .node .r_date, .right-border{
+		display: none;
+	}
+	.node .l_node{
+		width: calc(100% - 52px);
+		margin:0px auto;
+		margin-left: 10px;
+	}
+	.logo{
+		position: static;
+		margin-left: 2%;
+	}
+	.navul{
+		margin-right: 2%;
+	}
+	.navul li a{
+		padding-right: 15px;
+	}
 }
