@@ -9,7 +9,6 @@ body{
 	 background: #f6f6f6;
 	-webkit-transition: all .25s linear;
 	transition: all .25s linear;
-	/*font-family: 'Comic Sans MS', cursive, sans-serif;*/
 }
 header{
 	width: 100%;
@@ -42,7 +41,6 @@ header{
 	transition:.5s all;
 }
 .navul li a:hover{
-	/*text-decoration: underline;*/
 	transform: rotate(-5deg);
 	transform: scale(1.2);
 }
@@ -66,7 +64,6 @@ h1{
 }
 h1 a:hover{
 	background-color: #ffdf1f;
-	/*transition: 2s;*/
 }
 section h1 a{
 	padding:2px;
