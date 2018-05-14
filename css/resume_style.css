@@ -1,0 +1,205 @@
+.first{
+	height: 100%;
+}
+.left,.right{
+	width: 49.5%;
+	height: 100%;
+
+}
+.left{
+	float: left;
+	position: relative;
+	background: url(../img/flower.png) left -45% no-repeat, url(../img/flower1.png) right bottom no-repeat;
+	background-color: #f5f4ef;
+	background-size: 38%,36%;
+	box-shadow: -6px 2px 8px #eee inset;
+}
+.right{
+	float: right;
+	background-color: #f5f4ef;
+	box-shadow: 6px 2px 8px #eee inset;
+}
+.cover{
+	width: 100%;
+	height: 100px;
+	line-height: 100px;
+	position: absolute;
+	top:50%;
+	margin-top: -50px;
+	background-color: #f5d4d5;
+	text-align: center;
+	letter-spacing: 5px;
+}
+.cover h1{
+	color:#da728e;
+}
+.myInfo{
+	position: absolute;
+	left: 2%;
+	bottom: 3%;
+	line-height: 30px;
+	color:#da728e;
+	text-align: center;
+	text-align: left;
+}
+.photo{
+	width: 26%;
+	float: left;
+	position: relative;
+	left: 50%;
+	margin-top:10px;
+	margin-bottom: 30px;
+	margin-left: -12%;
+	z-index: 2;
+	transition: all .5s;
+}
+.photo img{
+	border-radius:50%;
+	width: 100%;
+	border:4px solid #f5d4d5;
+	box-shadow: 0px 0px 6px #999;
+}
+.photo:hover{
+	transform: scale(1.14);
+}
+.content{
+	width:98%;
+	margin:0px auto;
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+}
+.tree{
+	position: absolute;
+	width:4px;
+	height: 100%;
+	margin-top: 10px;
+	background-color: #f5d4d5;
+	left:50%;
+	margin-left:-2px;
+}
+.history{
+	width: 100%;
+	margin-top: 30px;
+	clear: both;
+	overflow: hidden;
+	color: #da728e;
+}
+.history .time{
+	float: left;
+	display: inline-block;
+	box-sizing: border-box;
+	width: 50%;
+	text-align: right;
+	padding-right: 10px;
+	position: relative;
+}
+.history:nth-child(2n-1) > .time{
+	float:right;
+	text-align: left;
+    padding-left: 10px;
+}
+.history:nth-child(2n-1) .circle{
+	float: left;
+    left: -17px;
+}
+.time .circle{
+	display: inline-block;
+	width:10px;
+	height: 10px;
+	position: relative;
+	background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid pink;
+    position: relative;
+    left: 17px;
+}
+.history p{
+	float: right;
+	display: inline-block;
+	box-sizing: border-box;
+	width: 47%;
+	padding: 10px 20px;
+	border:2px solid #fff;
+	border-radius:5px;
+	background-color: #f5d4d5;
+	letter-spacing: 2px;
+	box-shadow: -3px 3px 8px #fde8e8 inset;
+	transition: all .5s;
+}
+.history .text:hover{
+	cursor:pointer;
+	box-shadow: 0px 0px 6px #808080;
+}
+.history:nth-child(2n-1) > p{
+	float: left;
+}
+.honor{
+	column-count: 3;
+	-webkit-column-count:3;
+	-moz-column-count:3;
+	break-inside: avoid;
+}
+.imgTop{
+	font-size: 26px;
+	font-weight: bold;
+	letter-spacing: 6px;
+	text-align: center;
+	padding: 20px;
+	column-span:all;
+	-webkit-column-span:all;
+	-moz-column-span:all;
+	background: url(../img/flower1.png) right bottom no-repeat;
+	background-size:15%;
+	background-color:#f5d4d5;
+	text-shadow: 2px 2px 1px #eee;
+}
+.certificate{
+	padding: 20px;
+	text-align: center;
+	background-color:#fff;
+	margin-bottom: 30px;
+}
+.certificate img{
+	width: 100%;
+	cursor: pointer;
+	transition: all .4s;
+}
+.certificate img:hover{
+	width: 100%;
+	transform: scale(1.1);
+}
+.certificate  p{
+	margin-top: 10px;
+	font-size: 16px;
+	letter-spacing: 3px;
+	font-weight: bold;
+}
+footer{
+	width:100%;
+	height:100px;
+	background-color: #8cbffd;
+	text-align: center;
+	line-height: 100px;
+	color:#fff;
+}
+@media screen and (max-width: 415px){
+	.left,.right{
+		width: 100%;
+	}
+	.right{
+		height: auto;
+		overflow: auto;
+		padding-bottom: 22px;
+	}
+	.honor{
+		clear: both;
+		column-count:1;
+		-webkit-column-count:1;
+		-moz-column-count:1;
+	}
+	.imgTop{
+		font-size: 22px;
+		background-size: 30%;
+	}
+}

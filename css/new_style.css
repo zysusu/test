@@ -1,0 +1,202 @@
+html{
+	font-size: 62.5%;
+}
+a{
+	text-decoration: none;
+	color:black;
+}
+body{
+	 background: #f6f6f6;
+	-webkit-transition: all .25s linear;
+	transition: all .25s linear;
+	/*font-family: 'Comic Sans MS', cursive, sans-serif;*/
+}
+header{
+	width: 100%;
+	height:60px;
+}
+.logo{
+	margin-top: 40px;
+	margin-left: 8%;
+	position: fixed;
+	width: 20%;
+	float:left;
+}
+.logo img{
+	max-width:100%;
+}
+.navul{
+	margin-right: 20px;
+}
+.navul li{
+	line-height: 50px;
+	list-style: none;
+}
+.navul li a{
+	display: block;
+	float:right;
+	padding:0 15px;
+	font-size: 16px;
+	font-weight: bold;
+	color:#feb508;
+	transition:.5s all;
+}
+.navul li a:hover{
+	/*text-decoration: underline;*/
+	transform: rotate(-5deg);
+	transform: scale(1.2);
+}
+.main{
+	width:86%;
+	margin: 20px auto;
+	margin-top: 70px;
+	position: relative;
+}
+.right{
+	width:100%;
+	border-bottom:1px solid #b1b1b1;
+	margin-bottom:30px;
+	overflow: hidden;
+}
+.right:last-child{
+	border-bottom:none;
+}
+h1{
+	font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+h1 a:hover{
+	background-color: #ffdf1f;
+	/*transition: 2s;*/
+}
+section h1 a{
+	padding:2px;
+	transition: .5s;
+	cursor:pointer;
+	margin:0;
+	padding:0;
+	width:auto !important;
+	text-transform: uppercase;
+	font-size:24px;
+}
+article{
+	margin:22px 0;
+	height: 100px;
+	line-height: 2em;
+/*	line-height:2;行高是2倍的文字大小，均以相应的字体为基准。 
+	line-htight:2em;行高是2倍的文字大小，文字大小是指父元素中设定的字体大小。*/
+	font-size: 16px;
+	overflow: hidden;
+	display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+	/*text-align: justify;*/ /* 每一行撑满对齐*/
+	/*text-overflow: ellipsis;
+	white-space: nowrap;*/
+}
+
+.name{
+	color:#838383;
+}
+/*@media screen and (min-width:600px){*/
+.leftNav{
+	float:left;
+	width:22%;
+	min-height:400px;
+	height:auto;
+	border-right:1px solid gray; 
+	display: block;
+	position: fixed;
+}
+.leftNav ul{
+	list-style: none;
+}
+.leftNav ul li{
+	line-height:35px;
+	margin-bottom: 15px;
+	font-size: 14px;
+	/*font-size: 1rem;*/
+	padding-left:25px; 
+	/*font-family: 'Comic Sans MS', cursive, sans-serif;*/
+	background:url(img/tag-ico.png) no-repeat left;
+}
+.content{
+	float:left;
+	width: 56%;
+	position: relative;
+	margin-left: 30%;
+}
+.more{
+	display: none;
+}
+/*}*/
+@media screen and (min-width:670px){
+	.leftNav{
+	float:left;
+	width:22%;
+	min-height:400px;
+	height:auto;
+	border-right:1px solid gray; 
+	display: block;
+	position: fixed;
+	}
+}
+/*@media screen adn (min-width:600px)*/
+@media screen and (max-width:670px){
+	.logo{
+		position: static;
+		margin:0px;
+		float:none;
+		margin-top: 15px;
+   	    margin-left: 10px;
+	}
+	.navul{
+		margin-right: 0px;
+		width:100%;
+		padding-left: 0px;
+	}
+	.navul li a{
+		padding:0px;
+		padding-right: 20px;
+		font-size: 16px;
+	}
+	.main{
+		width:100%;
+		margin-top: 10px;
+	}
+	/*.leftNav{
+		display: none;
+	}*/
+	.content{
+		width: 100%;
+		margin-left: 0px;
+	}
+	.more{
+		margin-top: 5px;
+		display: block;
+		margin-left: 10px;
+	}
+	.more .iconfont{
+		font-size: 22px;
+	}
+	.leftNav{
+		display: none;
+		width: calc(100% - 16px);
+		position: static;
+		float: left;
+		padding-left: 0px;
+		background-color: #fff;
+		border-right: none;
+		margin: 0 8px;
+    	min-height: 25px;
+	}
+	.leftNav ul{
+		padding: 0 10px;
+		margin-left: 0px;
+	}
+	.leftNav ul li{
+		border-bottom: 1px solid #f3f3f3;
+	}
+	section h1 a{
+		font-size: 20px;
+	}
+}
