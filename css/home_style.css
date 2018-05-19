@@ -9,7 +9,6 @@ hr{
 	width:0%;
 }
 .wrap{
-	background:url(../img/bg2.png);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -96,7 +95,7 @@ header{
 .info img{
 	display: inline;
 	float:left;
-	width:45%;
+	width:44%;
 	height: inherit;
 }
 .info2 img{
@@ -107,7 +106,7 @@ header{
 	padding: 100px 20px;
 }
 .essay h2{
-	margin: 10px 0px;
+	margin-top: 72px;
 }
 .essay h3{
 	margin-bottom: 10px;

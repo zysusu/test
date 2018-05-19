@@ -9,6 +9,9 @@
 <link rel="stylesheet" type="text/css" media="only screen and (min-width:480px),only (min-device-width:480px)" href="css/home_style.css">
 <link rel="stylesheet" type="text/css" media="only screen and (max-width:490px), only (max-device-width:480px)" href="css/home_style01.css">
 <style type="text/css">
+.wrap{
+	background:url(./img/bg2.png);
+}
 @media screen and (max-width:480px){
 	html,body{
 		height: 100%;
@@ -17,11 +20,32 @@
 		height:540px;
 	}
 }
+@media screen and (min-width:776px){
+	.essay{
+		text-align: center;
+		width: 40%;
+	    margin-right: 8%;
+	    float: right;
+	    background-color: #fff;
+	    height: 340px;
+	    margin-top: 30px;
+	    color: #333;
+		padding: 0px;
+	}
+	.text{
+		display: block;
+	    opacity: 0;
+	    overflow: hidden;
+	    margin-top: 80px;
+	    transition: all 1s;
+	}
+}
+
 </style>
 </head>
 
 <body>
-<audio src="css/Moonglow.mp3" autoplay="autoplay"></audio>
+<!-- <audio src="css/Moonglow.mp3" autoplay="autoplay"></audio> -->
 
 <div class="wrap">
 <div class="first">
@@ -47,32 +71,38 @@
 	</div>
 </div><!-- first -->
 	<section>
-		<div class="info">
+		<div class="info info1">
 			<img src="img/img2.png" />
 			<article class="essay">
+			<span class="text">
 				<h2>第一阶段</h2>
 				<h3>独上西楼，忘尽天涯路</h3>
 				<p>槛菊愁烟兰泣露，罗幕轻寒，燕子双飞去。<br>明月不谙离恨苦，斜光到晓穿朱户。<br>
 				昨夜西风凋碧树，独上高楼，望见天涯路。<br>欲寄彩笺兼尺素，山长水阔知何处！</p>
+			</span>
 			</article>
 		</div>
 		<div class="info info2">
 			<img src="img/img1.png" />
 			<article class="essay">
+			<span class="text">
 				<h2>第二阶段</h2>
 				<h3>衣带渐宽终不悔，为伊消得人憔悴</h3>
 				<p>伫倚危楼风细细，望极春愁，黯黯生天际。<br>草色烟光残照里，无言谁会凭阑意。<br>
 				拟把疏狂图一醉，对酒当歌，强乐还无味。<br>衣带渐宽终不悔，为伊消得人憔悴。</p>
+			</span>
 			</article>
 		</div>
 		<div class="info info3">
 			<img src="img/img3.png" />
 			<article class="essay">
+			<span class="text">
 				<h2>第三阶段</h2>
 				<h3>蓦然回首，那人却在灯火阑珊处</h3>
 				<p>东风夜放花千树,更吹落,星如雨。<br>
 				宝马雕车香满路,凤箫声动,玉壶光转,一夜鱼龙舞。<br>
 				蛾儿雪柳黄金缕,笑语盈盈暗香去。<br>众里寻他千百度,蓦然回首,那人却在,灯火阑珊处.</p>
+			<span class="text">
 			</article>
 		</div>
 	</section>
@@ -96,7 +126,36 @@
 		}
 		},60);
 	}
-	window.onload = hrauto;
+
+	//window.onload = hrauto;
+window.onload = function(){
+		hrauto();
+		var _height = document.documentElement.clientHeight;  //浏览器可见区域的高度
+		var info1 = document.getElementsByClassName("text")[0];
+		var info2 = document.getElementsByClassName("text")[1];
+		var info3 = document.getElementsByClassName("text")[2];
+		function listenShow(ele,sTop){
+			var eleTop = ele.offsetTop;  //元素距离顶部的高度
+			if(sTop + _height + 30 > eleTop && sTop < eleTop + 300){
+				ele.style.opacity = 1;
+				ele.style.marginTop = '0px';
+			}else{
+				ele.style.opacity = 0.1;
+				ele.style.marginTop = '70px';
+			}
+		}
+	var _width = document.documentElement.clientWidth;
+	if(_width>=776){
+		window.onscroll = function(){
+			var sTop = document.documentElement.scrollTop;  //滑动的距离
+			listenShow(info1,sTop);
+			listenShow(info2,sTop);
+			listenShow(info3,sTop);
+		}
+	}
+}
+
+
 </script>
 </body>
 </html>
